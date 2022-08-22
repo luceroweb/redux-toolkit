@@ -1,8 +1,8 @@
 import React from "react";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { setModalVisible } from "../features/Home/homeSlice";
-import { addComment } from "../features/Profile/profileSlice";
+import { setModalVisible } from "../Home/homeSlice";
+import { addComment } from "../Profile/profileSlice";
 
 function CommentForm() {
   const [newComment, setNewComment] = useState("");

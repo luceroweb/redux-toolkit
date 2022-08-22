@@ -2,7 +2,7 @@ import { useSelector } from "react-redux";
 import "./App.css";
 import Home from "./features/Home/Home";
 import Profile from "./features/Profile/Profile";
-import Header from "./Components/Header";
+import Header from "./commons/Header";
 
 function App() {
   const app = useSelector((state) => state.app);
