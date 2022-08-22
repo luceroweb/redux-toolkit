@@ -4,8 +4,8 @@ import profileReducer from "../features/Profile/profileSlice";
 
 const store = configureStore({
   reducer: {
-    app: homeReducer,
-    comments: profileReducer,
+    home: homeReducer,
+    profile: profileReducer,
   },
 });
 

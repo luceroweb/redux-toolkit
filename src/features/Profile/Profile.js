@@ -4,8 +4,8 @@ import Modal from "../../commons/Modal";
 import CommentForm from "./CommentForm";
 
 const Profile = () => {
-  const app = useSelector((state) => state.app);
-  const comments = useSelector((state) => state.comments.list);
+  const app = useSelector((state) => state.home);
+  const comments = useSelector((state) => state.profile.comments);
   const dispatch = useDispatch();
 
   const listComments = comments.map((comment, index) => (

@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialSate = {
-  list: ["first comment"],
+  comments: ["first comment"],
 };
 
 export const profileSlice = createSlice({
@@ -9,8 +9,8 @@ export const profileSlice = createSlice({
   initialState: initialSate,
   reducers: {
     addComment(state, action) {
-      let addedComment = [...state.list, action.payload];
-      state.list = addedComment;
+      let addedComment = [...state.comments, action.payload];
+      state.comments = addedComment;
     },
   },
 });
