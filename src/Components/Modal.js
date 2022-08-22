@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { setModalVisible } from "../Utils/appSlice";
+import { setModalVisible } from "../features/Home/homeSlice";
 
 function Modal({ children }) {
   const dispatch = useDispatch();

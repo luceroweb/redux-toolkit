@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
-import { setScreen, setModalVisible } from "../Utils/appSlice";
-import Modal from "../Components/Modal";
-import CommentForm from "../Components/CommentForm";
+import { setModalVisible } from "../Home/homeSlice";
+import Modal from "../../Components/Modal";
+import CommentForm from "../../Components/CommentForm";
 
 const Profile = () => {
   const app = useSelector((state) => state.app);
@@ -17,7 +17,7 @@ const Profile = () => {
       <h1>Profile Screen</h1>
       <div>
         <img
-          src={require("../Images/profile.jpg")}
+          src={require("../../images/profile.jpg")}
           alt=""
           style={{ width: 200 }}
         />

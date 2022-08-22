@@ -5,8 +5,8 @@ const initialSate = {
   modalVisible: false,
 };
 
-export const appSlice = createSlice({
-  name: "data",
+export const homeSlice = createSlice({
+  name: "home",
   initialState: initialSate,
   reducers: {
     setScreen(state, action) {
@@ -18,6 +18,6 @@ export const appSlice = createSlice({
   },
 });
 
-export const { setScreen, setModalVisible } = appSlice.actions;
+export const { setScreen, setModalVisible } = homeSlice.actions;
 
-export default appSlice.reducer;
+export default homeSlice.reducer;

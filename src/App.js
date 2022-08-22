@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import "./App.css";
-import Home from "./Screens/Home";
-import Profile from "./Screens/Profile";
+import Home from "./features/Home/Home";
+import Profile from "./features/Profile/Profile";
 import Header from "./Components/Header";
 
 function App() {

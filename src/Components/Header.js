@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { setScreen } from "../Utils/appSlice";
+import { setScreen } from "../features/Home/homeSlice";
 
 const Header = () => {
   const dispatch = useDispatch();

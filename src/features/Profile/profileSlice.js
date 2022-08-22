@@ -4,8 +4,8 @@ const initialSate = {
   list: ["first comment"],
 };
 
-export const commentSlice = createSlice({
-  name: "comments",
+export const profileSlice = createSlice({
+  name: "profile",
   initialState: initialSate,
   reducers: {
     addComment(state, action) {
@@ -15,6 +15,6 @@ export const commentSlice = createSlice({
   },
 });
 
-export const { addComment } = commentSlice.actions;
+export const { addComment } = profileSlice.actions;
 
-export default commentSlice.reducer;
+export default profileSlice.reducer;
